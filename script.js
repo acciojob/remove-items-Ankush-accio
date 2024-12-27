@@ -1,5 +1,9 @@
-//your JS code here. If required.
-let remove = document.getElementById(colorSelect)
-let btn = document.getElementById(btn).addEventListner.click(()=>{
-	remove.option = ""
-})
+let remov = document.getElementById("colorSelect");
+
+document.getElementById("btn").addEventListener("click", () => {
+    let selectedIndex = remov.selectedIndex;
+
+    if (selectedIndex !== -1) {
+        remov.remove(selectedIndex);
+    } 
+});
